@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a1128" />
+  <title>Your Name — Engineering Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name, 14-year-old builder into coding, motors, and gaming." />
+
+  <!-- favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+  <!-- speed up page switching -->
+  <link rel="prefetch" href="about.html" />
+  <link rel="prefetch" href="projects.html" />
+  <link rel="prefetch" href="competitions.html" />
+  <link rel="prefetch" href="beyond.html" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- if JavaScript is off, just show everything -->
+  <noscript><style>.reveal { opacity: 1 !important; transform: none !important; filter: none !important; }</style></noscript>
+</head>
+<body>
+
+  <!-- scroll progress bar -->
+  <div class="progress" id="progressBar" aria-hidden="true"></div>
+
+  <!-- ==========================================================
+       EDIT ME #1 — "Your Name" appears in 3 places on this page
+       (below in the big title). Change it to your real name.
+       ========================================================== -->
+  <header class="nav" id="top">
+    <nav class="nav-inner">
+      <a href="index.html" class="logo">⚡ <span>Your Name</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="competitions.html">Competitions</a></li>
+        <li><a href="beyond.html">Beyond Tech</a></li>
+        <li><a href="journey.html">Journey</a></li>
+        <li><a href="school.html">My School</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero reveal">
+    <div class="hero-glow-wrap" data-parallax="-0.18">
+      <div class="hero-glow"></div>
+    </div>
+
+    <span class="shape shape-1"><span class="shape-inner"></span></span>
+    <span class="shape shape-2"><span class="shape-inner"></span></span>
+    <span class="shape shape-3"><span class="shape-inner"></span></span>
+    <span class="shape shape-4"><span class="shape-inner"></span></span>
+    <span class="shape shape-5"><span class="shape-inner"></span></span>
+
+    <div class="hero-stack" data-parallax="0.07">
+      <p class="hero-eyebrow">⚡ Engineering Portfolio</p>
+      <!-- EDIT ME #2 — change the name below -->
+      <h1>Hi, I'm <span class="accent">Your Name</span></h1>
+      <p class="hero-sub">I build things — code, motors, and everything in between.</p>
+      <div class="badge-row">
+        <span class="badge">🎂 14 years old</span>
+        <span class="badge">💻 Coding</span>
+        <span class="badge">⚙️ Motors</span>
+        <span class="badge">🎮 Gaming</span>
+        <span class="badge">🏆 FRC</span>
+        <span class="badge">🏆 FTC</span>
+      </div>
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="projects.html">See my projects</a>
+        <a class="btn btn-ghost" href="beyond.html">Life beyond tech</a>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#explore">▼ explore</a>
+  </section>
+
+  <!-- scrolling keyword strip -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-half">
+        <span>💻 CODING</span><span>⚡</span><span>⚙️ MOTORS</span><span>⚡</span>
+        <span>🎮 GAMING</span><span>⚡</span><span>🏆 FRC</span><span>⚡</span>
+        <span>🏆 FTC</span><span>⚡</span>
+      </div>
+      <div class="marquee-half">
+        <span>💻 CODING</span><span>⚡</span><span>⚙️ MOTORS</span><span>⚡</span>
+        <span>🎮 GAMING</span><span>⚡</span><span>🏆 FRC</span><span>⚡</span>
+        <span>🏆 FTC</span><span>⚡</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPLORE — pick a page (the site is multi-page, not one long scroll!) -->
+  <section id="explore" class="section reveal">
+    <h2 class="section-title">Explore My Site</h2>
+    <p class="section-hint">Every part lives on its own page — click to switch.</p>
+    <div class="explore-grid">
+      <a class="explore-card reveal" href="about.html">
+        <span class="explore-icon">👋</span>
+        <h3>About Me</h3>
+        <p>Who I am, my age, and what I work with.</p>
+        <span class="explore-go">Open →</span>
+      </a>
+      <a class="explore-card reveal" href="projects.html">
+        <span class="explore-icon">🛠️</span>
+        <h3>Projects</h3>
+        <p>My builds — code, motors, and whatever I'm making.</p>
+        <span class="explore-go">Open →</span>
+      </a>
+      <a class="explore-card reveal" href="beyond.html">
+        <span class="explore-icon">🎮</span>
+        <h3>Beyond Tech</h3>
+        <p>Gaming and the rest of my life outside building.</p>
+        <span class="explore-go">Open →</span>
+      </a>
+      <a class="explore-card reveal" href="competitions.html">
+        <span class="explore-icon">🏆</span>
+        <h3>Competitions</h3>
+        <p>FRC &amp; FTC — the FIRST robotics I compete with.</p>
+        <span class="explore-go">Open →</span>
+      </a>
+      <a class="explore-card reveal" href="journey.html">
+        <span class="explore-icon">🗺️</span>
+        <h3>My Journey</h3>
+        <p>Milestones from first spark to where I am now.</p>
+        <span class="explore-go">Open →</span>
+      </a>
+      <a class="explore-card reveal" href="school.html">
+        <span class="explore-icon">🏫</span>
+        <h3>My School</h3>
+        <p>Harmony Science Academy + a live map.</p>
+        <span class="explore-go">Open →</span>
+      </a>
+      <a class="explore-card reveal" href="contact.html">
+        <span class="explore-icon">📧</span>
+        <h3>Contact</h3>
+        <p>Say hi or join me on a build.</p>
+        <span class="explore-go">Open →</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>⚡ Built by <span>Your Name</span> — 14-year-old engineer</p>
+    <p><a href="#top">Back to top ▲</a></p>
+  </footer>
+
+  <!-- back to top floating button -->
+  <a href="#top" class="to-top" id="toTop" aria-label="Back to top">▲</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

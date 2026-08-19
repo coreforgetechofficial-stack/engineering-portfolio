@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a1128" />
+  <title>My School — Harmony Science Academy</title>
+  <meta name="description" content="My school: Harmony Science Academy at 9431 W Sam Houston Pkwy S, Houston, TX 77099." />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏫</text></svg>" />
+
+  <!-- speed up page switching -->
+  <link rel="prefetch" href="index.html" />
+  <link rel="prefetch" href="journey.html" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <noscript><style>.reveal { opacity: 1 !important; transform: none !important; filter: none !important; }</style></noscript>
+</head>
+<body class="school-page">
+
+  <!-- scroll progress bar -->
+  <div class="progress" id="progressBar" aria-hidden="true"></div>
+
+  <!-- ==========================================================
+       Nav — same style as the home page
+       ========================================================== -->
+  <header class="nav" id="top">
+    <nav class="nav-inner">
+      <a href="index.html" class="logo">⚡ <span>Your Name</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="competitions.html">Competitions</a></li>
+        <li><a href="beyond.html">Beyond Tech</a></li>
+        <li><a href="journey.html">Journey</a></li>
+        <li><a href="school.html" class="active">My School</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SCHOOL HERO -->
+  <section class="hero school-hero reveal">
+    <div class="hero-glow-wrap" data-parallax="-0.18">
+      <div class="hero-glow"></div>
+    </div>
+
+    <span class="shape shape-1"><span class="shape-inner"></span></span>
+    <span class="shape shape-2"><span class="shape-inner"></span></span>
+    <span class="shape shape-3"><span class="shape-inner"></span></span>
+
+    <div class="hero-stack" data-parallax="0.07">
+      <p class="hero-eyebrow">🏫 My School</p>
+      <h1>Harmony Science Academy</h1>
+      <p class="hero-sub">
+        9431 W Sam Houston Pkwy S, Houston, TX 77099
+      </p>
+      <div class="badge-row">
+        <span class="badge">📍 Houston, Texas</span>
+        <span class="badge">🔬 Science &amp; Engineering</span>
+        <span class="badge">🎓 Home of my builds</span>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#map">▼ see it on the map</a>
+  </section>
+
+  <!-- MAP -->
+  <section id="map" class="section reveal">
+    <h2 class="section-title">Where the School Is</h2>
+    <p class="section-hint">You can drag and zoom this map — it's live.</p>
+
+    <!-- The map loads lazily when you scroll to it (faster page). -->
+    <div class="map-wrap tilt">
+      <div class="map-placeholder" id="mapPlaceholder">
+        <p class="map-loading">🗺️ Loading the map…</p>
+      </div>
+      <iframe
+        id="schoolMap"
+        class="map-frame"
+        title="Map of Harmony Science Academy"
+        loading="lazy"
+        src="https://www.google.com/maps?q=9431%20W%20Sam%20Houston%20Pkwy%20S%2C%20Houston%2C%20TX%2077099&output=embed"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- ABOUT THE SCHOOL -->
+  <section id="about-school" class="section reveal">
+    <h2 class="section-title">About My School</h2>
+    <div class="grid-3">
+      <div class="card skill-card">
+        <div class="skill-icon">📌</div>
+        <h3>Address</h3>
+        <p>9431 W Sam Houston Pkwy S<br />Houston, TX 77099<br />United States</p>
+      </div>
+      <div class="card skill-card">
+        <div class="skill-icon">🔬</div>
+        <h3>What I love about it</h3>
+        <!-- EDIT ME #6 — replace with your real reasons -->
+        <p>A school focused on science and engineering — a great place to grow my skills and interests.</p>
+      </div>
+      <div class="card skill-card">
+        <div class="skill-icon">🛣️</div>
+        <h3>Getting there</h3>
+        <p>It's on the Sam Houston Tollway (West Beltway 8). Check the map above to explore the area around school.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>⚡ Back to the portfolio → <a href="index.html"><span>Your Name</span>'s homepage</a></p>
+    <p><a href="#top">Back to top ▲</a></p>
+  </footer>
+
+  <a href="#top" class="to-top" id="toTop" aria-label="Back to top">▲</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

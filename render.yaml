@@ -1,0 +1,13 @@
+# Render.com blueprint for this static portfolio site.
+# You can also skip this file and just use the Render dashboard (see README.md).
+
+services:
+  - type: web
+    name: engineering-portfolio
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: max-age=60
