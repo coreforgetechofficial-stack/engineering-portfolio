@@ -191,7 +191,31 @@ if (sections.length && navAnchors.length && "IntersectionObserver" in window) {
   sections.forEach((s) => spy.observe(s));
 }
 
-/* ---------- 8. Map placeholder -> real map ---------- */
+/* ---------- 8. Copy email button (works even without a mail app) ---------- */
+const copyBtn = document.getElementById("copyEmail");
+const emailValue = "igulum.bjk@gmail.com";
+
+if (copyBtn) {
+  copyBtn.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(emailValue);
+    } catch (err) {
+      // older-browser fallback: secretly select a text field and copy
+      const tmp = document.createElement("textarea");
+      tmp.value = emailValue;
+      tmp.style.position = "fixed";
+      tmp.style.opacity = "0";
+      document.body.appendChild(tmp);
+      tmp.select();
+      document.execCommand("copy");
+      document.body.removeChild(tmp);
+    }
+    copyBtn.textContent = "✅ Copied!";
+    setTimeout(() => { copyBtn.textContent = "📋 Copy email"; }, 2500);
+  });
+}
+
+/* ---------- 9. Map placeholder -> real map ---------- */
 const mapFrame = document.getElementById("schoolMap");
 const mapPlaceholder = document.getElementById("mapPlaceholder");
 
@@ -203,7 +227,7 @@ if (mapFrame && mapPlaceholder) {
   setTimeout(() => mapPlaceholder.classList.add("hidden"), 6000);
 }
 
-/* ---------- 9. Show current year in the footer ---------- */
+/* ---------- 10. Show current year in the footer ---------- */
 document.querySelectorAll("[data-year]").forEach((el) => {
   el.textContent = new Date().getFullYear();
 });

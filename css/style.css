@@ -509,6 +509,20 @@ body.page-exit { opacity: 0; }
 .contact-card { max-width: 720px; margin: 0 auto; text-align: center; }
 .contact-card p { margin-bottom: 8px; }
 
+.contact-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 14px 0 0;
+}
+.contact-note {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 12px;
+  font-style: italic;
+}
+
 .footer {
   border-top: 1px solid var(--line);
   padding: 34px 20px;
